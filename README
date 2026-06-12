@@ -13,3 +13,10 @@ vagrant ssh	Connexion SSH à la VM
 vagrant status	Affiche l'état de la VM
 vagrant provision	Relance le provisionnement
 logout
+
+Les VMS
+
+192.168.1.2  controlplane master
+192.168.1.87  node01 slave
+192.168.1.134  node02 Storage
+192.168.1.151  node03 DHCP

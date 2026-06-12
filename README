@@ -4,3 +4,12 @@ Installation de Vagrant sur windows
 
 Fichier de configuration de vagrant
 https://github.com/kodekloudhub/certified-kubernetes-administrator-course/tree/master/kubeadm-clusters/virtualbox
+
+Commande	Description
+vagrant up	Crée et démarre la VM
+vagrant halt	Arrête la VM proprement
+vagrant destroy -f	Détruit la VM
+vagrant ssh	Connexion SSH à la VM
+vagrant status	Affiche l'état de la VM
+vagrant provision	Relance le provisionnement
+logout

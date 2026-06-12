@@ -18,5 +18,5 @@ Les VMS
 
 192.168.1.2  controlplane master
 192.168.1.87  node01 slave
-192.168.1.134  node02 Storage
-192.168.1.151  node03 DHCP
+192.168.1.134  node02 storage
+192.168.1.151  node03 dns

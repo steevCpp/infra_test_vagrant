@@ -48,7 +48,11 @@ Sur le master
   * sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 - Deployement du cni cilium 
-
+      Install Helm  https://helm.sh/docs/intro/install/
+  helm install cilium cilium/cilium --version 1.19.4 \
+   --namespace kube-system \
+   --set image.pullPolicy=IfNotPresent \
+   --set ipam.mode=kubernetes
 
 Sur le slave
     3  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf

@@ -55,6 +55,8 @@ Sur le master
    --set image.pullPolicy=IfNotPresent \
    --set ipam.mode=kubernetes
 
+   en cas de timeout sur le pluu de l'image: sudo ctr -n=k8s.io images pull quay.io/cilium/cilium:v1.19.4
+
 Sur le slave
     3  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
         net.ipv4.ip_forward = 1

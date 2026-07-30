@@ -16,10 +16,10 @@ logout
 
 Les VMS
 
-192.168.1.2  controlplane master
-192.168.1.87  node01 slave
-192.168.1.134  node02 storage
-192.168.1.151  node03 dns
+192.168.1.127  controlplane master
+192.168.1.184  node01 slave
+192.168.1.77  node02 storage
+192.168.1.23  node03 dns
 
 Sur le master
 1. Installation de Kubernetes v1.33 avec kubeadm

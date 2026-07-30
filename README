@@ -69,7 +69,9 @@ Sur le slave
     9  curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.33/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
    10  echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.33/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
    11  sudo apt-get update && sudo apt-get install -y kubelet kubeadm kubectl && sudo apt-mark hold kubelet kubeadm
-        kubeadm join 192.168.1.2:6443 --token gas4sa.ia33h861y2lop77u --discovery-token-ca-cert-hash sha256:b6ae8ad709840161b382643eace311abb74b310075e87b8a9164a4cce54f31e8
+        kubeadm join 192.168.1.127:6443 --token tw2b5c.n7xd9nsn7kiwoa4p \
+        --discovery-token-ca-cert-hash sha256:5c1d134d03c05bf16bb5d6ab0b73c3d456a9ebbe4537c4d87bd8f5a342749ae6
+
 
 
 

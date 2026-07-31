@@ -72,6 +72,16 @@ Sur le slave
         kubeadm join 192.168.1.127:6443 --token tw2b5c.n7xd9nsn7kiwoa4p \
         --discovery-token-ca-cert-hash sha256:5c1d134d03c05bf16bb5d6ab0b73c3d456a9ebbe4537c4d87bd8f5a342749ae6
 
+- Deployement de Moodle
+Install PV Provider, OpenEBS
+helm repo add openebs https://openebs.github.io/openebs
+helm repo update
+helm install openebs --namespace openebs openebs/openebs --create-namespace
+
+Get Moodle charts
+helm pull --untar oci://registry-1.docker.io/bitnamicharts/moodle:27.0.23
+helm install univ-popu.gab ./moodle
+
 
 
 
